@@ -87,8 +87,17 @@ main {
     border: solid black;
    
 }
-
 .card h2{
+    text-align: center;
+    background-color: skyblue;
+    padding: 10px;
+    margin: 1px;
+    border-radius: 10px;
+    border: solid black;
+   
+}
+
+.card h3{
     border-bottom: 1px dotted black;
     margin: 20px;
     text-align: center;
