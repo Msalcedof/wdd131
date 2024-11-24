@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruinas de Copán</title>
+    <meta name="description" content=" this is a web page about a turistic and very visited place in Copan">
+    <meta name="author" content="Marco Salcedo">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Copán Ruinas</h1>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/copan-large.webp" media="(min-width: 768px)">
+                <source srcset="images/copan-small.webp" media="(max-width: 767px)">
+                <img src="images/copan-small.webp" alt="Ruins of Copán, Honduras">
+            </picture>
+        </section>
+
+        <!-- Data Section -->
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: 24 sq km</li>
+                <li>Population: 6,400 (approx.)</li>
+                <li>Department: Copán</li>
+                <li>Country: Honduras</li>
+                <li>Languages: Spanish</li>
+                <li>Currency: Lempira (HNL)</li>
+                <li>Time Zone: UTC-6</li>
+                <li>Calling Code: +504</li>
+                <li>Internet TLD: .hn</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-info">
+                <p>Temperature: <span id="temperature">23°C</span></p>
+                <p>Conditions: <span id="conditions">Sunny</span></p>
+                <p>Wind: <span id="windSpeed">6 km/h</span></p>
+                <p>Wind Chill: <span id="windChill">Calculating...</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2024 | Marco Salcedo | Ruinas de Copán <br>
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
+
+
+
+
