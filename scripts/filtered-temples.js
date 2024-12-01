@@ -89,7 +89,7 @@ const temples = [
     }
         
     
-    // Add your three custom temple objects here...
+   
   ];
   
   // Reference to gallery container
@@ -117,7 +117,7 @@ const temples = [
   // Render all temples on load
   renderTemples(temples);
   
-  // Filter temples based on criteria
+  
   const filterTemples = (criteria) => {
     switch (criteria) {
       case "Old":
@@ -133,7 +133,7 @@ const temples = [
         renderTemples(temples.filter((t) => t.area < 10000));
         break;
       default:
-        renderTemples(temples); // Show all temples
+        renderTemples(temples); 
     }
         
 
