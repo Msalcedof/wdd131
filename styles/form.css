@@ -1,0 +1,112 @@
+/* Reset browser default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ece5f0; /* Light purple background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    min-height: 100vh;
+}
+
+/* Header and Footer */
+header, footer {
+    text-align: center; /* Centers the text */
+    width: 100%; /* Ensures full width */
+    background-color: #6c4f8f; /* Purple background */
+    color: white; /* White text */
+    padding: 10px 0;
+}
+
+/* Main Content */
+main {
+    background-color: #d8cde0; /* Slightly darker purple for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto; /* Centers the form container */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds consistent spacing between fields */
+}
+
+label, legend {
+    
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left; /* Keeps labels left-aligned for better readability */
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Rating Section */
+.rating-group {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating-group label {
+
+    font-size: 20px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s ease;
+}
+
+.rating-group input[type="radio"] {
+    display: none; /* Hides radio buttons */
+    
+}
+
+.rating-group input[type="radio"]:checked + label {
+    color: #ffc107; /* Highlight selected star */
+}
+
+.rating-group label:hover,
+.rating-group label:hover ~ label {
+    color: #ffc107; /* Highlight stars on hover */
+}
+
+/* Checkboxes */
+fieldset label {
+    display: block;
+    font-size: 14px;
+}
+
+/* Submit Button */
+button {
+    background-color: #6c4f8f; /* Purple button */
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a3e73; /* Darker purple on hover */
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Marco Salcedo">
+    <meta name="description" content="this is a page to practice about the Correct way to create a Form">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+     
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form id="reviewForm" action="review.html" method="get">
+            <!-- Product Name -->
+            <label for="productName">Product Name:</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <label><input type="radio" name="rating" value="1" required>&star;</label>
+                <label><input type="radio" name="rating" value="2" required>&star;&star;</label>
+                <label><input type="radio" name="rating" value="3" required>&star;&star;&star;</label>
+                <label><input type="radio" name="rating" value="4" required>&star;&star;&star;&star;</label>
+                <label><input type="radio" name="rating" value="5" required>&star;&star;&star;&star;&star;</label>
+            </fieldset>
+
+            <!-- Date of Installation -->
+            <label for="installationDate">Date of Installation:</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <!-- Useful Features -->
+            <fieldset>
+                <legend>Useful Features:</legend>
+                <label><input type="checkbox" id="feature1" name="features" value="Feature 1"> Durability</label>
+                <label><input type="checkbox" id="feature2" name="features" value="Feature 2"> Quality Of Work</label>
+                <label><input type="checkbox" id="feature3" name="features" value="Feature 3"> High Quality Pruduct</label>
+            </fieldset>
+
+            <!-- Written Review -->
+            <label for="writtenReview">Written Review (Optional):</label>
+            <textarea id="writtenReview" name="writtenReview" rows="4"></textarea>
+
+            <!-- User Name -->
+            <label for="userName">Your Name (Optional):</label>
+            <input type="text" id="userName" name="userName">
+
+            <!-- Submit Button -->
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 | Marco Salcedo | Honduras</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
