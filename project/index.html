@@ -3,14 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Plan - Innovative Construction</title>
+    <title>WDD 131 - Website Plan Project - Innovative Construction</title>
+    <meta name="author" content="Marco Salcedo">
+    <meta name="description" content="This is a Webpage about constructions welding and remodeling in General">
     <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
 </head>
 <body>
+
     <header>
         <h1>Innovative Construction and Remodeling Services</h1>
+        <div class="logo">
+            <img src="images/Logo1.webp" alt="Logo" width="200" loading="lazy">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              
+            </ul>
+        </nav>
     </header>
+
     <main>
+        <h2 id="greeting">Welcome!</h2>
+        <section>
+            <h3>Choose Your Theme</h3>
+            <label>
+                <input type="radio" name="theme" value="dark" > Dark
+            </label>
+            <label>
+                <input type="radio" name="theme" value="light" > Light
+            </label>
+            <button onclick="savePreferences()">Save Preferences</button>
+        </section>
+
+
+
+
+
         <!-- Site Name -->
         <section>
             <h2>Site Name</h2>
@@ -54,9 +87,9 @@
         <section>
             <h2>Wireframe</h2>
             <h3>Mobile View</h3>
-            <img src="images/mobile.webp" alt="Wireframe for Mobile View" width="800" />
+            <img src="images/mobileview1.webp" alt="Wireframe for Mobile View" width="800" >
             <h3>Desktop View</h3>
-            <img src="images/desktop.webp" alt="Wireframe for Desktop View" width="800"  />
+            <img src="images/desktopview1.webp" alt="Wireframe for Desktop View" width="800"  >
         </section>
     </main>
     <footer>

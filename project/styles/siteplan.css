@@ -1,47 +1,155 @@
-/* Basic CSS for Site Plan */
 body {
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background-color: rgb(216, 212, 212);
+    
+}
+
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+body.light {
     background-color: #f4f4f4;
-    color: #333;
+    color: #000;
 }
 
 header {
-    background-color: #0275d8;
-    color: white;
-    padding: 1rem 0;
+    background: #0275d8;
+    color: #fff;
+    padding: 5px 10px;
     text-align: center;
+    font-weight: bold;
+    font-size: larger;
 }
 
-h1, h2 {
-    font-family: "Roboto", sans-serif;
+h2{
+    color: #2974b6;
+    font-weight: bold;
+    text-align: left;
+    margin: 20px;
+    padding: 15px;
+    
+    
+    
 }
 
-h1 {
-    font-size: 2rem;
+p{
+    font-weight: bold;
+    font-size: large;
 }
 
-h2 {
-    margin-top: 1.5rem;
-    font-size: 1.5rem;
-    color: #0275d8;
+.logo{
+padding: 2px;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 5px;   
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 10px;
 }
 
 section {
-    background: white;
-    margin: 1rem auto;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    margin-bottom: 20px;
 }
 
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: #0275d8;
-    color: white;
-    margin-top: 2rem;
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+
+.content.reverse {
+    flex-direction: row-reverse;
+}
+
+img {
+   
+    
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid black;
+    
+}
+
+/* Gallery Styles */
+.gallery {
+    max-width: 600px;
+    text-align: center;
+    margin: 15px;
+}
+
+.gallery h2 {
+    color: #0275d8;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    padding: 15px;
+    margin: 25px 25px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+        
+    }
+}
+
+
+
+
+
+footer {
+    background: #0275d8;
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+
